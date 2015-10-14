@@ -4,5 +4,8 @@
 
 <p>Synopsis: <%= @movie.synopsis %></p>
 
+<p><img src='<%= @movie.image %>'></p>
+
+
 <p><%= link_to "Update Movie", edit_movie_path(@movie) %></p>
 <p><%= link_to "Delete Movie", movie_path(@movie), :method => 'delete' %></p>
