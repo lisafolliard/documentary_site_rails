@@ -1,1 +1,7 @@
 <h1><%= @movie.title %></h1>
+
+<p>Directed by: <%= @movie.director %></p>
+
+<p>Synopsis: <%= @movie.synopsis %></p>
+
+<p><%= link_to "Update Movie", edit_movie_path(@movie) %>
