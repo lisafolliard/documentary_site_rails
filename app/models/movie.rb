@@ -5,4 +5,12 @@ class Movie < ActiveRecord::Base
 
   has_many :reviews
 
+  def average_rating
+      sum = 0
+      number_reviews = self.reviews.count
+      self.reviews.each() do |r|
+        sum = sum.+(r.rating)
+      end
+    sum / number_reviews
+  end
 end
