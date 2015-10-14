@@ -3,12 +3,16 @@
 <%= form_for @movie do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+  <br>
   <%= f.label :director %>
   <%= f.text_field :director %>
+  <br>
   <%= f.label :synopsis %>
   <%= f.text_field :synopsis %>
+  <br>
   <%= f.label :image %>
   <%= f.text_field :image %>
-
-  <%= f.submit %>
+  <br>
+  <br>
+  <%= f.submit 'Add Movie', class:'btn btn-success' %>
 <% end %>

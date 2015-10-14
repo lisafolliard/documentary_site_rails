@@ -7,7 +7,7 @@ describe "the add a movie process" do
     fill_in 'Title', :with => 'Test Title'
     fill_in 'Director', :with => 'That French Guy'
     fill_in 'Synopsis', :with => 'A movie with Guy Richie'
-    click_on 'Create Movie'
+    click_on 'Add Movie'
     expect(page).to have_content 'Test Title'
   end
 end
