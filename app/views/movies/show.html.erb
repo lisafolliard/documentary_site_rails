@@ -17,7 +17,8 @@
 
 <ul>
   <% @reviews.each do |review| %>
-  <li><%= review.name %>'s review: <%= review.comment %></li>
-
+  <li>Review by: <%= review.name %></li>
+  <li><%= review.comment %></li>
+  <br>
   <% end %>
 </ul>
