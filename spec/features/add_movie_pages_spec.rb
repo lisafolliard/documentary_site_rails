@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "the add a movie process" do
   it "adds a new movie" do
     visit movies_path
-    click_on "Add a new Movie"
+    click_on "Add a Movie"
     fill_in 'Title', :with => 'Test Title'
     fill_in 'Director', :with => 'That French Guy'
     fill_in 'Synopsis', :with => 'A movie with Guy Richie'

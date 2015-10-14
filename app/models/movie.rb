@@ -3,4 +3,6 @@ class Movie < ActiveRecord::Base
   validates :director, :presence => true
   validates :synopsis, :presence => true
 
+  has_many :reviews
+
 end
