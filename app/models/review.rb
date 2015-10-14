@@ -3,6 +3,6 @@ class Review < ActiveRecord::Base
 
   validates :name, :presence => true
   validates :comment, :presence => true
-  validates :rating, :presence => true
+  validates :rating, :numericality => {:greater_than => 0, :less_than => 6}, :presence => true
 
 end

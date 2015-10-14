@@ -11,14 +11,15 @@
 
 <p><%= link_to "Delete Movie", movie_path(@movie), :method => 'delete' %></p>
 
-<p><%= link_to "Add Review", new_movie_review_path(@movie) %></p>
-
 <hr>
-
+<p><%= link_to "Add Review", new_movie_review_path(@movie) %></p>
+<br>
 <ul>
   <% @reviews.each do |review| %>
   <li>Review by: <%= review.name %></li>
+  <li>Rating: <%= review.rating %></li>
   <li><%= review.comment %></li>
+  <br>
   <p><%= link_to "Update Review", edit_movie_review_path(@movie, review) %></p>
   <p><%= link_to "Delete Review", movie_review_path(@movie, review), :method => 'delete' %></p>
   <br>
