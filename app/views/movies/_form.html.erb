@@ -1,3 +1,5 @@
+<%= render "layouts/errors", :object => @movie %>
+
 <%= form_for @movie do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
