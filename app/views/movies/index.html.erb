@@ -1,20 +1,28 @@
 <% content_for(:title, "Documentary Site") %>
 
-<h1>Documentary Fan Site</h1>
+<span class="title"><h1>Documentary Fan Site</h1></span>
 
-<%= link_to image_tag(@random_image), movie_path(@random_link) %>
+<div class="col-md-8">
+  <h3>List of movies:</h3>
+    <%= link_to "Sort by Title (A-Z)", :sort => "lower(title)" %> ||
+    <%= link_to "Sort by Date Added", :sort => "created_at" %>
+  <br>
+  <br>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><%= link_to movie.title, movie_path(movie) %></li>
+    <% end %>
+  </ul>
 
-<h3>List of movies:</h3>
-  <%= link_to "Sort by Title (A-Z)", :sort => "lower(title)" %> ||
-  <%= link_to "Sort by Date Added", :sort => "created_at" %>
-<br>
-<br>
-<ul>
-  <% @movies.each do |movie| %>
-    <li><%= link_to movie.title, movie_path(movie) %></li>
-  <% end %>
-</ul>
+  <% @search.each do |search| %>
+    <h3>Your search results:</h3>
+    <li><%= search.title %></li>
+    <% end %>
+</div>
 
-<% @search.each do |search| %>
-  <li><%= search.title %></li>
-<% end %>
+<div class="col-md-4">
+  <div id="feature_film">
+    <h2>Featured Film:</h2>
+  <%= link_to image_tag(@random_image), movie_path(@random_link) %>
+  </div>
+</div>
