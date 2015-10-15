@@ -4,6 +4,11 @@ class MoviesController <ApplicationController
     @random = Movie.all.sample(1)[0]
     @random_image = @random.image
     @random_link = @random.id
+    if params[:query]
+      @search = Movie.basic_search(params[:query])
+    else
+      @search = []
+    end
   end
 
   def show

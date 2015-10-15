@@ -11,6 +11,10 @@
       <a class="navbar-brand" href="/movies">Documentaries</a>
       <ul class='nav navbar-nav'>
         <li><a href="/movies/new">Add a Movie</a></li>
+          <%= form_tag(movies_path, method: 'get', class: "navbar-form navbar-left", role: "search") do %>
+            <%= text_field_tag :query, params[:query], size: 150, placeholder: "Search", class: "form-control"%>
+            <%= submit_tag 'Search', class: 'btn btn-success' %>
+          <% end %>
       </ul>
     </div>
     <div class="container">
