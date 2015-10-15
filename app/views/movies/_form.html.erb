@@ -12,7 +12,19 @@
   <br>
   <%= f.label :image %>
   <%= f.text_field :image %>
+
+  <p>Choose a subgenre:</p>
+
+  <%= f.label :subgenre, "Nature" %>
+  <%= f.radio_button :subgenre, "Nature" %>
+  <%= f.label :subgenre, "Food" %>
+  <%= f.radio_button :subgenre, "Food" %>
+  <%= f.label :subgenre, "Health" %>
+  <%= f.radio_button :subgenre, "Health" %>
+  <%= f.label :subgenre, "Culture" %>
+  <%= f.radio_button :subgenre, "Culture" %>
+
   <br>
   <br>
-  <%= f.submit 'Add Movie', class:'btn btn-success' %>
+  <%= f.submit 'Submit', class:'btn btn-success' %>
 <% end %>
