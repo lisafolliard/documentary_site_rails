@@ -1,0 +1,24 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+	Yes, there are many commits and they are descriptive 
+Is there good spec coverage?
+	Pretty good coverage for model/unit tests except should test for def average rating
+Do all specs pass?	
+	Should test integration more and fix the one that is currently there
+Is the application logic clear and easy to navigate?
+	There needs to be a movie in the db otherwise it will not load because of nilclass on movies_path
+Can you make a test payment through Stripe?
+	You cannot. 
+Is the site user-friendly?
+	Need to set a root route!
+	Sorting should just change the list without addind another search results heading
+Are there opportunities for refactoring?
+	use before_action in controllers to set defaults for variables so you don't have to repeat them in each action
+What features stand out?
+	featured film and random image is cool
+What features could be improved?
+	it could use more features, style forms
+Do you have any additional constructive criticism or positive feedback to share?
+    	good use of RESTful controllers, slim models, clean searching. could benefit from better spec coverage, more styling/interactivity, and make the title helper on all pages.
+	should have an index on movie title so that it is faster in sorting in the db.
+        Don't have a ton of <br> tags. 
+	Indent private methods more to make it easier to read
