@@ -1,4 +1,4 @@
-* ### Documentary Site
-* ## By Jennifer Bell and Lisa Folliard
+Documentary Site
+By Jennifer Bell and Lisa Folliard
 
-* A website that allows users to add, review and search for films.
+A website that allows users to add, review and search for films.
