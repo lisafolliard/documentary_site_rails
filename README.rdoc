@@ -2,3 +2,8 @@ Documentary Site
 By Jennifer Bell and Lisa Folliard
 
 A website that allows users to add, review and search for films.
+
+Please include setup steps
+1. bundle install
+2. rake db:create
+3. rake db:migrate
