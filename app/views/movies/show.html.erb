@@ -4,12 +4,17 @@
 
 <%= @movie.average_rating %>
 
+<br><br>
+
 <p>Directed by: <%= @movie.director %></p>
 
 <p><%= @movie.synopsis %></p>
 
+<br>
+
 <p><img src='<%= @movie.image %>'></p>
 
+<br>
 
 <p><%= link_to "Update Movie", edit_movie_path(@movie) %></p>
 

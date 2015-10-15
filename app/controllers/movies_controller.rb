@@ -1,6 +1,9 @@
 class MoviesController <ApplicationController
   def index
     @movies = Movie.order(params[:sort])
+    @random = Movie.all.sample(1)[0]
+    @random_image = @random.image
+    @random_link = @random.id
   end
 
   def show
